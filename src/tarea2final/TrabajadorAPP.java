@@ -12,14 +12,26 @@ package tarea2final;
 public class TrabajadorAPP {
     
     public static void main(String[] args) {
-        Administrativo admi= new Administrativo("A123","Jorge C.","indefinido","SNP",10,0,0);
-        Administrativo ope= new Administrativo("O123","Luis R.","tiempo completo","AFP",20,0,0);
+        Ocupacion admi= new Ocupacion("indefinido","AFP",16,"A12300","Jorge Casma","Administrativo");
+        Ocupacion ope= new Ocupacion("tiempo completo","SNP",5,"P12300","Jorge Paz","Operario");
+        Ocupacion supe= new Ocupacion("medio tiempo","AFP",16,"S12300","David Lache","Supervisor");
+        Ocupacion ayu= new Ocupacion("tiempo completo","AFP",5,"AY12300","Luis Robles","Ayudante");
         admi.bonificacion();
         admi.descuento();
+        admi.PagoTotal();
         ope.bonificacion();
         ope.descuento();
-        System.out.println("Administravo "+admi.toString());
-        System.out.println("Operario "+ope.toString());
+        ope.PagoTotal();
+        supe.bonificacion();
+        supe.descuento();
+        supe.PagoTotal();
+        ayu.bonificacion();
+        ayu.descuento();
+        ayu.PagoTotal();
+        System.out.println(admi.toString());
+        System.out.println(ope.toString());
+        System.out.println(supe.toString());
+        System.out.println(ayu.toString());
     }
     
 }

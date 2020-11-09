@@ -27,11 +27,8 @@ public abstract class Trabajador {
      //atributos  
     private String codigo;
     private String nombre;
-    private String tipodecontrato;
-    private String seguro;
-    private int tiempodeservicio;
-    private double bono;
-    private double descuento;
+    private String Ocupacion;
+    
     
 
     public String getCodigo() {
@@ -50,66 +47,28 @@ public abstract class Trabajador {
         this.nombre = nombre;
     }
 
-    public String getTipodecontrato() {
-        return tipodecontrato;
+    public String getOcupacion() {
+        return Ocupacion;
     }
 
-    public void setTipodecontrato(String tipodecontrato) {
-        this.tipodecontrato = tipodecontrato;
-    }
-
-    public int getTiempodeservicio() {
-        return tiempodeservicio;
-    }
-
-    public void setTiempodeservicio(int tiempodeservicio) {
-        this.tiempodeservicio = tiempodeservicio;
-    }
-
-    public double getBono() {
-        return bono;
-    }
-
-    public void setBono(double bono) {
-        this.bono = bono;
-    }
-
-    public String getSeguro() {
-        return seguro;
-    }
-
-    public void setSeguro(String seguro) {
-        this.seguro = seguro;
-    }
-
-    public double getDescuento() {
-        return descuento;
-    }
-
-    public void setDescuento(double descuento) {
-        this.descuento = descuento;
+    public void setOcupacion(String Ocupacion) {
+        this.Ocupacion = Ocupacion;
     }
     
     
 //metodo constructor
 
-    public Trabajador(String codigo, String nombre, String tipodecontrato,String seguro, int tiempodeservicio, double bono, double descuento) {
+    public Trabajador(String codigo, String nombre, String ocupacion) {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.tipodecontrato = tipodecontrato;
-        this.seguro=seguro;
-        this.tiempodeservicio = tiempodeservicio;
-        this.bono = bono;
-        this.descuento=descuento;
+        this.Ocupacion= ocupacion;
     }
     
     
 
     @Override
     public String toString() {
-        return "codigo=" + codigo + ", nombre=" + nombre + ", tipodecontrato=" + tipodecontrato +", seguro=" + seguro + ", tiempodeservicio=" + tiempodeservicio + ", bono=" + bono + ", descuento "+descuento+" ,";
+        return "codigo=" + codigo + ", nombre=" + nombre +" ,Ocupacion "+Ocupacion+" ,";
     }
 
- 
-    //prueba3
 }
