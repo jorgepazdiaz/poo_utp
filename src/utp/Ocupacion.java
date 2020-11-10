@@ -1,4 +1,4 @@
-package tarea2final;
+package utp;
 
 public class Ocupacion extends Trabajador {
 

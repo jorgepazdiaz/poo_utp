@@ -21,7 +21,7 @@ pueden recibir un descuento del 11% del sueldo si el tipo de pensión es por AFP
 •La bonificación correspondiente
 •El monto del descuento
 •Pago Final */
-package tarea2final;
+package utp;
 
 public abstract class Trabajador {
      //atributos  
